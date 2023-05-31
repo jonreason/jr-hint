@@ -38,7 +38,6 @@ Use an id or class name as the attribute name, and the message as the value. Mes
 
 Add attribute <code>console</code> to display messages in the console instead of the default tooltip.
 
-```html
 
 ## Styling example
 
