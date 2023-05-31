@@ -1,0 +1,26 @@
+{
+  "name": "jr-hint",
+  "version": "1.0.0",
+  "description": "Web component that displays some custom message to user when hovering HTML elements.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonreason/jr-hint.git"
+  },
+  "keywords": [
+    "hint",
+    "tooltip",
+    "info",
+    "message",
+    "debug"
+  ],
+  "author": "Jon Reason",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonreason/jr-hint/issues"
+  },
+  "homepage": "https://github.com/jonreason/jr-hint#readme"
+}
