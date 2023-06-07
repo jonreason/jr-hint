@@ -3,7 +3,7 @@
 This is a small web component that allows you to display custom messages when hovering elements.
 It has very minimal styling, so up to you to style it to your liking.
 
-##Install
+## Install
 
 ```bash
 npm install jr-hint

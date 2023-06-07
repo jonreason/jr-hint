@@ -1,8 +1,9 @@
 {
   "name": "jr-hint",
-  "version": "1.0.0",
-  "description": "Web component that displays some custom message to user when hovering HTML elements.",
+  "version": "1.0.2",
+  "description": "Web component that displays custom messages to user when hovering HTML elements.",
   "main": "index.js",
+  "module": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

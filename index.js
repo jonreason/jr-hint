@@ -68,3 +68,5 @@ class JRHint extends HTMLElement {
 }
 
 customElements.define("jr-hint", JRHint);
+
+export default JRHint;
