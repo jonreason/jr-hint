@@ -19,7 +19,7 @@ npm i jr-hint
 Client side only, no SSR. 
 
 
-####main.js (example1)
+###main.js (example1):
 
 ```js
 import { JrHint } from 'jr-hint'
@@ -28,7 +28,8 @@ customElements.define('jr-hint', JrHint);
 
 depending on the setup, customElements.define() may need to be wrapped in useEffect (react) or onMounted (vue).
 
-####App.vue (example2)
+###App.vue (example2):
+
 ```js
 import {JrHint} from "jr-hint";
 
@@ -38,7 +39,8 @@ onMounted(function(){
 ```
 
 
-####demo/index.html (example3)
+###demo/index.html (example3):
+
 ```html
 <script type="module">
     import '../jr-hint.js';
