@@ -1,13 +1,15 @@
 {
   "name": "jr-hint",
   "version": "1.0.4",
-  "description": "Web component that displays custom messages to user when hovering HTML elements. Experimental package, don't use it in production.",
+  "description": "Web component that displays custom messages when hovering HTML elements.",
   "type": "module",
   "main": "index.js",
   "module": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "exports": {
+    ".": "./index.js",
+    "./my-component.js": "./jr-hint.js"
   },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jonreason/jr-hint.git"

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+	<script type="module">
+		import '../jr-hint.js';
+	</script>
+
+	<style>
+		html, body {
+			padding: 0;
+			margin: 0;
+			background-color: #eee;
+		}
+
+		intro {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			height: 50vh;
+		}
+
+		h1 {
+			font-family: monospace;
+		}
+
+		p{
+			font-family: Roboto, Arial;
+			text-align: center;
+		}
+
+		examples {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+			height: 50vh;
+		}
+
+		div {
+			width: 100px;
+			height: 100px;
+		}
+
+		#square {
+			background-color: red;
+		}
+
+		.circle {
+			background-color: blue;
+			border-radius: 50%;
+			width: 100px;
+			height: 100px;
+		}
+
+		jr-hint {
+			width: 100%;
+			font-family: monospace, sans-serif;
+		}
+
+		pre {
+			background-color: #000;
+			color: gold;
+			padding: 20px;
+		}
+
+	</style>
+
+	<intro>
+		<h1>&ltjr-hint&gt</h1>
+		<p>
+			Quick way to add some custom messages to elements. Attribute name can be a tag, id or class. The value is the message to display.<br><br>
+			Add attribute <code>console</code> to write to console instead.<br>
+			Add attribute <code>fixed</code> to keep the message field visible until closed with x-button.<br>
+		</p>
+
+
+<pre>
+<code id="code-example">
+&ltbutton&gtOK&lt/button&gt
+&ltdiv id="square"&gt&lt/div&gt
+&ltdiv class="circle"&gt&lt/div&gt
+&ltdiv class="circle"&gt&lt/div&gt
+
+&ltjr-hint
+	button="This is a button."
+	square="A square message. &ltbr&gtNext line..."
+	circle="A circular message."
+&gt&lt/jr-hint&gt
+</code>
+</pre>
+	</intro>
+
+	<p>Hover over the elements below to see the custom message.</p>
+	<examples>
+
+		<button>OK</button>
+		<div id="square"></div>
+		<div class="circle"></div>
+		<div class="circle"></div>
+	</examples>
+
+	<jr-hint
+			button="This is a button."
+			square="A square message. <br>Next line..."
+			circle="A circular message."
+	></jr-hint>
+
+</body>
+</html>
