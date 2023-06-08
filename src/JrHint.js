@@ -47,11 +47,13 @@ export class JrHint extends HTMLElement {
 		<button>x</button>
 		`;
 
-
 		const shadow = this.attachShadow({mode: 'open'});
 		shadow.append(JrHintTemplate.content.cloneNode(true));
 
-		this.buttonElement = shadow.querySelector("button");
+	}
+
+	connectedCallback() {
+
 		this.writeToConsole = this.getAttribute("console");
 		this.keepFixed = this.getAttribute("fixed");
 		this.selection = null;
@@ -88,10 +90,12 @@ export class JrHint extends HTMLElement {
 
 		}
 
-		this.buttonElement.addEventListener('click', evt => {
+		this.shadowRoot.querySelector("button").addEventListener('click', evt => {
 			this.classList.remove("visible");
 		});
+
 	}
+
 	close() {
 		this.classList.remove("visible");
 	}
