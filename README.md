@@ -4,6 +4,11 @@ This is a small web component that allows you to display custom messages when ho
 The message can be displayed in a tooltip at the bottom of the screen or in the console.
 It has very minimal styling, so up to you to style it to your liking.
 
+## Demo
+
+https://jonreason.github.io/jr-hint/demo/
+
+
 ## Install
 
 ```bash
