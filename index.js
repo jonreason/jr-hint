@@ -25,9 +25,12 @@ HintTemplate.innerHTML = `
 	<slot></slot>
 `;
 
-class JRHint extends HTMLElement {
+export class JRHint extends HTMLElement {
 	constructor() {
 		super();
+
+
+
 		const shadow = this.attachShadow({mode: 'open'});
 		shadow.append(HintTemplate.content.cloneNode(true));
 
@@ -66,7 +69,3 @@ class JRHint extends HTMLElement {
 	}
 
 }
-
-customElements.define("jr-hint", JRHint);
-
-export default JRHint;
