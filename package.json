@@ -1,7 +1,7 @@
 {
   "name": "jr-hint",
-  "version": "1.0.2",
-  "description": "Web component that displays custom messages to user when hovering HTML elements.",
+  "version": "1.0.4",
+  "description": "Web component that displays custom messages to user when hovering HTML elements. Experimental package, don't use it in production.",
   "type": "module",
   "main": "index.js",
   "module": "index.js",

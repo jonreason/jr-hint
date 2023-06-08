@@ -25,7 +25,7 @@ HintTemplate.innerHTML = `
 	<slot></slot>
 `;
 
-export class JRHint extends HTMLElement {
+export default class JRHint extends HTMLElement {
 	constructor() {
 		super();
 
