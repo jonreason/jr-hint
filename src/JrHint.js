@@ -56,12 +56,7 @@ export class JrHint extends HTMLElement {
 		this.keepFixed = this.getAttribute("fixed");
 		this.selection = null;
 
-		if (this.keepFixed !== null) {
-			this.classList.add("visible");
-		}
-
 		let hints = this.getAttributeNames();
-
 
 		for (let i = 0; i < hints.length; i++) {
 			let selectors = hints[i] + ", ." + hints[i] + ", #" + hints[i];
@@ -96,5 +91,8 @@ export class JrHint extends HTMLElement {
 		this.buttonElement.addEventListener('click', evt => {
 			this.classList.remove("visible");
 		});
+	}
+	close() {
+		this.classList.remove("visible");
 	}
 }
